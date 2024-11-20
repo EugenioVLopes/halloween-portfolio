@@ -1,17 +1,17 @@
-import Header from '@/components/sections/Header';
-import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
-import Include from '@/components/sections/Include';
-import Personal from '@/components/sections/Personal';
-import Footer from '@/components/sections/Footer';
+import About from "@/components/sections/About";
+import AboutInclude from "@/components/sections/AboutInclude ";
+import Footer from "@/components/sections/Footer";
+import HalloweenHero from "@/components/sections/HalloweenHero";
+import Personal from "@/components/sections/Personal";
+import WhyInclude from "@/components/sections/WhyInclude";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-orange-950">
-      <Header />
-      <Hero />
+    <main className="min-h-screen flex flex-col bg-slate-950 gap-4">
+      <HalloweenHero />
       <About />
-      <Include />
+      <AboutInclude />
+      <WhyInclude />
       <Personal />
       <Footer />
     </main>

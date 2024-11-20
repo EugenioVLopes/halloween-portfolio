@@ -1,4 +1,3 @@
-import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -17,7 +16,7 @@ const Footer = () => {
       icon: <Mail size={24} />,
       href: "mailto:eugenio.lopes.090@ufrn.edu.br",
       label: "Email",
-    }
+    },
   ];
 
   return (
@@ -25,7 +24,6 @@ const Footer = () => {
       <div className="container mx-auto px-10">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold mb-2">Entre em contato</h3>
             <p className="text-orange-200">Vamos criar algo incrível juntos!</p>
           </div>
           <div className="flex gap-6">

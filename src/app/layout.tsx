@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Halloween Portfolio | Include Engenharia",
-  description: "A spooky portfolio showcasing my journey in tech",
+  description:
+    "Um portfólio como o tema de Halloween para a Include Engenharia",
 };
 
 export default function RootLayout({
@@ -16,9 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
-        {children}
-      </body>
+      <head>
+        <link rel="icon" href="/halloween-ghost.png" />
+      </head>
+      <body className={`${montserrat.className} antialiased`}>{children}</body>
     </html>
   );
 }
