@@ -16,14 +16,16 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen flex flex-col bg-slate-950 gap-4">
+    <>
       <FloatingNav navItems={navItems} />
-      <HalloweenHero />
-      <About />
-      <Personal />
-      <AboutInclude />
-      <WhyInclude />
-      <Footer />
-    </main>
+      <main className="min-h-screen flex flex-col bg-slate-950 gap-4">
+        <HalloweenHero />
+        <About />
+        <Personal />
+        <AboutInclude />
+        <WhyInclude />
+        <Footer />
+      </main>
+    </>
   );
 }
