@@ -10,9 +10,9 @@ export default function Home() {
   const navItems = [
     { name: "Início", link: "#hero" },
     { name: "Sobre", link: "#about" },
+    { name: "Interesses", link: "#personal" },
     { name: "Include", link: "#about-include" },
-    { name: "Por que Include?", link: "#why-include" },
-    { name: "Interesses Pessoais", link: "#personal" },
+    { name: "Por quê?", link: "#why-include" },
   ];
 
   return (
@@ -20,9 +20,9 @@ export default function Home() {
       <FloatingNav navItems={navItems} />
       <HalloweenHero />
       <About />
+      <Personal />
       <AboutInclude />
       <WhyInclude />
-      <Personal />
       <Footer />
     </main>
   );
