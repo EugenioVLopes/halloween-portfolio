@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <FloatingNav navItems={navItems} />
-      <main className="min-h-screen flex flex-col bg-slate-950 gap-4">
+      <main className="min-h-screen flex flex-col bg-slate-950 gap-4 overflow-hidden">
         <HalloweenHero />
         <About />
         <Personal />
